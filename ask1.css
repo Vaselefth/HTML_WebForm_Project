@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+ }
+header{
+    color: red;
+    background-color: black;
+    text-align: center;
+	padding: 1em;
+	line-height: normal;
+}
+footer{
+    color: red;
+    background-color: black;
+    text-align: center;
+	padding: 1em;
+	clear: left;
+}
+nav {
+    background-color: rgb(77, 0, 77);
+    float: left;
+    width: 14%;
+    padding-bottom: 15%;
+}
+aside {
+    background-color: rgb(77, 0, 77);
+    float: right;
+    width: 14%;
+	text-align: center;
+	padding-bottom: 21.4%;
+}
+
+section {
+	float: left;
+    width: 70%; 
+    margin-left: 10px;	
+}
+img{
+    float: right;
+	height: 80%;
+}
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+div p{
+	color: green;
+}
+
+.center{
+    text-align: center;
+    color: red;
+}
+
+#para1{ 
+    background-color: rgb(77, 0, 77);
+}
+
+h3{
+    color: red;
+}
+
+h4,h5{
+	background-color: green;
+}
+
+a:visited {
+	color: pink;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+ul{
+	color: #1E90FF;
+	
+}
+
+ol{
+	list-style-type: lower-roman;
+}
+
+ul.bullet-type{
+	list-style-type: square; 
+}
+
+table{
+	table-layout: fixed;
+	border: 1px purple;	
+	text-align: center;
+}
+
+th{
+	color: red;
+}
+
+tr{
+	background-color: green;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+
+
+
+
+
+
+
+
+

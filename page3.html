@@ -1,0 +1,79 @@
+<html>
+<head>
+    <link rel="stylesheet" href="ask1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#eikona1").hide();
+			$("#eikona2").fadeOut();
+			$("#para1").animate({height: "250px", opacity: "0.4"}, "slow");
+			$("aside").css("background-color","green");
+			$("nav").css("background-color","green");
+			$("table").css("float","right");
+			$("button").css("visibility","hidden");
+		});
+	});
+	</script>
+    <title>Ομάδες της Αγγλίας - ΙΟΥΝΙΟΣ 2019</title>
+</head>
+<body>
+
+<header>
+   <h1>Ομάδες της Αγγλίας</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="index.html">Manchester United F.C</a></li></br>
+    <li><a href="page2.html">Liverpool F.C.</a></li></br>
+    <li><a href="page3.html">Chelsea F.C.</a></li></br>
+	<li><a href="form.html">Φόρμα</a></li></br>
+	<li><a href="database.html">Εισαγωγή στη βάση δεδομένων</a></li>
+  </ul>
+</nav>
+
+<aside>  <br/> <a href="index.html">Επιστροφή στην αρχική σελίδα</a></aside>
+
+<section> 
+      <h1>Chelsea F.C.</h1>
+        <div>
+			<p id="para1"> Η Τσέλσι είναι αγγλικός ποδοσφαιρικός σύλλογος που εδρεύει στο Λονδίνο. Ιδρύθηκε το 1905 και από τότε χρησιμοποιεί ως έδρα το Στάμφορντ Μπριτζ που βρίσκεται στο Φούλαμ του δυτικού Λονδίνου. Στο μεγαλύτερο μέρος της ιστορίας της έχει αγωνιστεί στην κορυφαία κατηγορία της Αγγλίας και κατά καιρούς είχε διακρίσεις και τίτλους τόσο στην Αγγλία όσο και στην Ευρώπη.
+			<a href="https://el.wikipedia.org/wiki/%CE%A4%CF%83%CE%AD%CE%BB%CF%83%CE%B9_%CE%A6%CE%9A" target="_blank">Για περισσότερες πληροφορίες.</a>
+			</p> 
+		</div>
+		<img id="eikona1" src="chelsea.jpg" alt="Chelsea F.C Logo image" style="float : left;width:100px;height:100px;" />
+		<img id="eikona2" src="stamfordBridge.jpg" alt="Stamford Bridge image" style="float:right;width:100px;height:100px;" />
+		<table>
+			<caption> Πίνακας 1.1: Παίχτες της Chelsea F.C.</caption>
+			<tr>
+				<th>GoalKeepers</th>
+				<th>Defenders</th>
+				<th rowspan="2"><img src="chelsea1.jpg" alt="chelsea image" height=100 width=120></img></th>
+			</tr>
+			
+			<tr>
+				<td>Kepa Arrizabalaga</td>
+				<td>Antonio Rüdiger</td>
+			</tr>
+			
+			<tr>
+				<td>Willy Caballero</td>
+				<td>Marcos Alonso</td>		
+				<td rowspan="2"><img src="hazard.jpg" alt="hazard image" height=120 width=120></img></td>
+			</tr>
+			
+			<tr>
+				<td>Robert Green</td>
+				<td>David Luiz</td>	
+			</tr>
+		</table>
+		<button>Click me!</button>
+</section>
+
+<footer>Eleftheriadis Vasilis &copy;</footer>
+
+</body>
+</html>

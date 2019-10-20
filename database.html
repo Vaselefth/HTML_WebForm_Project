@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ask1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ομάδες της Αγγλίας - ΙΟΥΝΙΟΣ 2019</title>
+</head>
+<body>
+
+<header>
+   <h1>Εγγραφή στη MySQL βάση</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Manchester United F.C</a></li></br>
+    <li><a href="page2.html">Liverpool F.C.</a></li></br>
+    <li><a href="page3.html">Chelsea F.C.</a></li></br>
+	<li><a href="form.html">Φόρμα</a></li></br>
+	<li><a href="database.html">Εισαγωγή στη βάση δεδομένων</a></li>
+  </ul>
+</nav>
+
+<aside>  <br/> <a href="index.html">Επιστροφή στην αρχική σελίδα</a></aside>
+
+<section>
+	<form method="post" action="databaseDO.php" style = "background-color:aqua; text-align:left; padding-bottom:40px; padding-left:10px; border:5px solid black;"> 
+		Name: <input type="text" name="name">
+		<span class="error"><?php echo $nameErr;?></span>
+		<br><br>
+		
+		E-mail: <input type="text" name="email">
+		<span class="error"><?php echo $emailErr;?></span>
+		<br><br>
+		
+		<input type="submit" name="submit" value="Εγγραφή">
+		
+		<input type="reset" id ="ResetDB" name ="ResetDB" value = "Καθάρισμα"/>		   
+	</form>
+</section>
+
+<footer>Eleftheriadis Vasilis &copy;</footer>
+
+</body>
+</html>

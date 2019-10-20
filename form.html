@@ -1,0 +1,111 @@
+<html>
+<head>
+	<link rel="stylesheet" href="ask1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ΦΟΡΜΑ - ΙΟΥΝΙΟΣ 2019</title>
+	
+	<script>
+		function CheckEmail(){
+			var x;
+			x = document.form["Email"].value;
+			if (x.length > 25 ) {
+				alert("Το email δεν πρέπει να είναι πάνω από 25 χαρακτήρες");
+				return false;
+			} 
+			else {
+				return true;
+			}
+		}
+			
+		function CheckBox(){
+			if (document.getElementById("hotels").checked){
+				return true;
+			}
+			if (document.getElementById("food").checked){
+				return true;
+			}
+			if (document.getElementById("sightseeing").checked){
+				return true;
+			}
+			if (document.getElementById("museums").checked){
+				return true;
+			}
+			alert("Διάλεξε check box");
+				return false;
+			}
+			
+		function CheckName(){
+			var fullname =  document.getElementById("Username").value;
+				if(/\d/.test(fullname)){
+					alert("Το ονοματεπώνυμο δεν πρέπει να περιέχει ψηφία");
+					return false;
+				}
+				return true;
+		}
+
+		function Check(){
+			var x = CheckEmail();
+			var y = CheckBox();
+			var z = CheckName();
+			return x && y && z;
+		}	
+	</script>
+</head>
+
+<body>
+	<header><h1>Φόρμα Επικοινωνίας</h1></header>
+	
+	<nav>
+	<ul>
+		<li><a href="index.html">Manchester United F.C</a></li></br>
+		<li><a href="page2.html">Liverpool F.C.</a></li></br>
+		<li><a href="page3.html">Chelsea F.C.</a></li></br>
+		<li><a href="form.html">Φόρμα</a></li></br>
+		<li><a href="database.html">Εισαγωγή στη βάση δεδομένων</a></li>
+	</ul>
+	</nav>
+	
+	<aside>  <br/> <a href="index.html">Επιστροφή στην αρχική σελίδα</a></aside>
+
+	
+	<section>
+	<form name="form" method="get" action = "results.html" style = "background-color:aqua; text-align:left; padding-bottom:40px; padding-left:10px; border:5px solid black;">
+		<h3>Συμπληρώστε τα παρακάτω στοιχεία:</h3>
+		Όνοματεπώνυμο:<br>
+		<input id="Username" type="text" name="fullname" size="60" required /><br><br>
+		Ηλικία(διάλεξε ένα απο τα παρακάτω):
+		<br />
+		<input type="radio" name="age" value="17"> Έως 17<br>
+		<input type="radio" name="age" value="18-30"> Από 18 έως 30<br>
+		<input type="radio" name="age" value="31-40"> Από 31 έως 40<br>
+		<input type="radio" name="age" value="41-55"> Από 41 έως 55<br>
+		<input type="radio" name="age" value="56-65"> Από 56 έως 65<br>
+		<input type="radio" name="age" value="66+"> Πάνω από 66<br>
+		<br />
+		Τί πληροφορίες θέλετε(διαλέξτε όσα θέλετε):
+		<br />
+		<input id="hotels" type="checkbox" name="hotels" value="hotels"> Ξενοδοχεία<br>
+		<input id="museums" type="checkbox" name="museums" value="museums"> Μουσεία<br>
+		<input id="sightseeing" type="checkbox" name="sightseeing" value="sightseeing"> Αξιοθέατα<br>
+		<input id="food" type="checkbox" name="restaurants" value="restaurants"> Εστιατόρια- Φαγητό<br>
+		<br>
+		Περιοχή που σας ενδιαφέρει:<br />
+		<select name="area" size="4">
+			<option value="-macedonia">Μακεδονία</option>
+			<option value="-cyclades">Κυκλάδες</option>
+			<option value="-thrace">Θράκη</option>
+			<option value="-other">Άλλη</option>
+		</select>
+		<br />
+		<br />
+		email επικοινωνίας:
+		<br />
+		<input type="email" name="Email" size="60" id="Username" required><br><br>
+		<input type="submit" onclick="return Check();" value="Υποβολή - Δείξε στοιχεία" >
+		<input type="reset" id ="Reset" name ="Reset" value = "Καθάρισμα"/>
+		</section>
+		
+		<footer>Eleftheriadis Vasilis &copy;</footer>
+</body>
+</html>
